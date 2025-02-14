@@ -11,3 +11,56 @@
 
   </body>
 </html>
+<!DOCTYPE html>
+<html>
+  <head>
+      <script>
+        function add(){
+          var num1,num2;
+          num1=Number(document.form1.txtNum1.value);
+          num2=Number(document.form1.txtNum2.value);
+          document.form1.txtSum.value=num1+num2;
+        }
+         function sub(){
+          var num1,num2;
+          num1=Number(document.form1.txtNum1.value);
+          num2=Number(document.form1.txtNum2.value);
+          document.form1.txtSum.value=num1-num2;
+        }
+         function mul (){
+          var num1,num2;
+          num1=Number(document.form1.txtNum1.value);
+          num2=Number(document.form1.txtNum2.value);
+          document.form1.txtSum.value=num1*num2;
+        }
+         function dev(){
+          var num1,num2;
+          num1=Number(document.form1.txtNum1.value);
+          num2=Number(document.form1.txtNum2.value);
+          document.form1.txtSum.value=num1/num2;
+        }
+      </script>
+
+  </head>
+  <body>
+
+
+      <form name= "form1">
+        Enter operand 1:
+        <input type="text" name ="txtnum1"size=8><br><br>
+         Enter operand 2:
+         <input type="text" name ="txtnum2"size=8><br><br>
+            <input type="button" value ="ADD" onclick="add()"><br><br>
+             <input type="button" value ="Sub" onclick="sub()"><br><br>
+            <input type="button" value ="Mul" onclick="mul()"><br><br>
+            <input type="button" value ="Div" onclick="dev()"><br><br>
+            <input type= "text"name="txtSum">
+            
+         
+        
+      </form>
+        
+     
+
+  </body>
+</html>
